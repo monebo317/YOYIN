@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Farian Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.0.7/css/boxicons.min.css">
+  <script src="http://kit.fontawesome.com/c425e24a8.js"crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <a hre="#home" class="logo"><strong> FARIAN </strong>
+          <span><strong>MUDASIRU. </strong> 
+          </span></a>
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#Services">Services</a></li>
+          <li><a href="#Portfolio">Portfolio</a></li>
+          <li><a href="#Contact">Contact</a></li>
+          <i class="fas fa-times" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p>Virtual Assistant</p>
+        <h1>Hi, I'm Farian <span> <br>Mudasiru </span>from Nigeria</h1>
+      </div>
+    </div>
+  </div>
+<!---------about------------>
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="farian1.jpg">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>I'm a freelance virtual assistant who has completed different trainings on administrative tasks. I'm also a virtual assistant with detailed knowledge of technical administrative tools which includes Microsoft applications and Google Workspace.</p>
+
+          <p>  For the past few months, I have been helping some business owners manage their busy schedules and communicate with their clients via email. I also took on mini roles which includes, preparing strong presentation slides and internet researching.</p>
+            
+            <p>As a freelancer who has access to different websites, I have great experience in transcription of audio and video files.</p>
+            
+            <p>If you have a project I can help with, please get in touch.</p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+              <p class="tab-links" onclick="opentab('experience')">Experience</p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Virtual Assistant</span> <br>  Aid in transcription of audio and video files</li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>2023 -current</span> <br>working with Gabbyville till date</li>
+              </ul>
+              <li><span>2023 - current</span> <br>working as a freelancer till date</li>
+            </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2022</span> <br>training at Buolo Solution </li>
+              </ul>
+            </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!----services-----> 
+<div id="Services">
+  <div class="container">
+    <h1 class="sub-title">My Services</h1>
+    <div class="services-list">
+      <div>
+        <h2>Administrative Tasks</h2>
+        <p>I've completed your administrative tasks! If you need help with anything else or have new projects, feel free to ask me.</p>
+        
+      </div>
+    </div>
+     </div>
+</div>
+
+<!--------portfolio-->
+<div id="Portfolio">
+  <div class="container">
+    <h1 class="sub-title">My Work</h1>
+    <div class="work-list">
+      <div class="work">
+        <img src="work1.jpg">
+        <div class="layer"></div>
+        <h3>Administrative Tasks</h3>
+        <p>Managing emails, calendars, and scheduling appointments.</p>
+        
+      </div>
+
+      <div class="work">
+        <img src="work2.jpeg">
+        <div class="layer"></div>
+        <h3>Technical Support</h3>
+        <p>Assisting with customer service through live chat or email.</p>
+        
+      </div>
+
+      <div class="work">
+        <img src="work3.jpg">
+        <div class="layer"></div>
+        <h3>Creative Services</h3>
+        <p>Assisting with digital marketing campaigns and strategies.</p>
+      
+      </div>
+    </div>
+    <a href="#" class="btn">See More</a>
+  </div>
+</div>
+
+<!---------------contact-->
+<div id="Contact">
+  <div class="container">
+    <div class="row">
+    <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p><i class='bx bxs-paper-plane' ></i> mudasiruyoyinsola@gmail.com</p>
+        <p><i class='bx bxs-phone'></i> 09030292484</p>
+        <div class="social-icons">
+          <a href="" target="_blank"><i class='bx bxl-instagram bx-tada' ></i></a>
+          <a href="" target="_blank"><i class='bx bxl-linkedin bx-tada' ></i></a>
+          <a href="" target="_blank"><i class='bx bxl-whatsapp bx-tada' ></i></a>
+          <a href="" target="_blank"><i class='bx bxl-facebook bx-tada' ></i></a>
+        </div>
+        <a href="FARIANCV.pdf" download class="btn btn2">Download CV</a>
+      </div>
+      <!-- <div class="contact-right"></div>
+      <form name="submit-to-google-sheet">
+        <input type="text"name="Name" placeholder="Your Name" required>
+        <input type="email"name="Email" placeholder="Your Email" required>
+        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+        <button type="submit" class="btn2">Submit</button>
+      </form> -->
+
+      <form action="#">
+        <div class="input-box">
+          <div class="input-field field">
+            <input type="text" placeholder="Full Name" id="name" class="item" autocomplete="off">
+            <div class="error-txt">Full Name can't be blank</div>
+          </div>
+
+            <div class="input-field field">
+            <input type="text" placeholder="Email Address" id="email" class="item" autocomplete="off">
+            <div class="error-txt">Email Address can't be blank</div>
+          </div>
+          </div>
+
+          <div class="input-box">
+            <div class="input-field field">
+              <input type="text" placeholder="Phone Number" id="Phone" class="item" autocomplete="off">
+              <div class="error-txt">Phone Number can't be blank</div>
+            </div>
+  
+              <div class="input-field field">
+              <input type="text" placeholder="Subject" id="subject" class="item" autocomplete="off">
+              <div class="error-txt">Subject can't be blank</div>
+            </div>
+        </div>
+
+        <div class="textarea-field field">
+          <textarea name="message" cols="30" rows="10" placeholder="Your Mesaage" class="item" autocomplete="off"></textarea>
+          <div class="error-txt">Message can't be blank</div>
+        </div>
+        <button type="submit">Send Message</button>
+      </form>
+
+      <span id="msg"></span>
+    </div>
+    <div class="copyright"></div>
+    <p>Copyright @ David Monebi. Made a <i class='bx bxs-heart' style='color:#fd0808'  ></i> Portfolio </p>
+  </div>
+  </div>
+
+
+
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+  
+    function opentab(tabname, event) {
+      for (let tablink of tablinks) {
+        tablink.classList.remove("active-linkS");  // Changed from "active-links" to "active-link"
+      }
+  
+      for (let tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+  
+      event.currentTarget.classList.add("active-link");  // Consistent with the class name
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
+  
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      var sidemenu = document.getElementById("sidemenu");
+  
+      if (sidemenu) {
+        function openmenu() {
+          sidemenu.style.right = "0";
+        }
+  
+        function closemenu() {
+          sidemenu.style.right = "-200px";
+        }
+  
+        // Example of adding event listeners (assuming you have buttons with these IDs)
+        document.getElementById("openMenuButton").addEventListener("click", openmenu);
+        document.getElementById("closeMenuButton").addEventListener("click", closemenu);
+      }
+    });
+  </script>
+  
+
+<!-- <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxW3neYvCFNiDlNkglVYPIcpG2MT1yHL71BVlN0Um5aZH1GYrDltzOWydbUNWVWfIY6/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg =document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successful"
+        setTimeout(function() {
+          msg.innerHTML = ""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  }) -->
+<!-- </script> -->
+<script src="https://smtpjs.com/v3/smtp.js">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="port.js"></script>
+<script>
+  // Tab Switching
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+
+function opentab(tabname) {
+    for (let tablink of tablinks) {
+        tablink.classList.remove("active-link");
+    }
+
+    for (let tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
+
+// Mobile Menu
+var sidemenu = document.getElementById("sidemenu");
+
+function openmenu() {
+    sidemenu.style.right = "0";
+}
+
+function closemenu() {
+    sidemenu.style.right = "-200px";
+}
+
+// Form Validation (Optional)
+document.querySelector('form').addEventListener('submit', function(event) {
+    let hasError = false;
+    const fields = document.querySelectorAll('.input-field .item');
+    
+    fields.forEach(field => {
+        if (field.value.trim() === '') {
+            field.parentElement.classList.add('error');
+            hasError = true;
+        } else {
+            field.parentElement.classList.remove('error');
+        }
+    });
+    
+    if (document.querySelector('.textarea-field .item').value.trim() === '') {
+        document.querySelector('.textarea-field').classList.add('error');
+        hasError = true;
+    } else {
+        document.querySelector('.textarea-field').classList.remove('error');
+    }
+    
+    if (hasError) {
+        event.preventDefault();
+    }
+});
+
+</script>
+
+</body>
+</html>
